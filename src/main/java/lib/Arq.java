@@ -1,3 +1,5 @@
+package main.java.lib;
+
 import java.io.*;
 import java.util.Formatter;
 import java.util.Scanner;
