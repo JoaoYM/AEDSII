@@ -1,10 +1,9 @@
 package main.java.unidade00f;
-
 import main.java.lib.Arq;
+
 
 public class Ex00 {
    // Execute e brinque com os arquivos
-   // ExemploArq01Escrita.java e ExemploArq02Leitura.java
    public static void main(String[] args) {
       // Escrita();
       // Leitura();
@@ -58,15 +57,14 @@ public class Ex00 {
    }
 
    public static void copiarArquivoV2() {
-      Arq.openRead("exemplo.txt");
+      Arq.openRead("C:\\Users\\joao.aguiar\\Desktop\\756491_AEDSII_LISTAS\\Listas_JAVA\\src\\main\\java\\unidade00f\\exemplo.txt");
       String str = "";
       while (Arq.hasNext()) {
          str += Arq.readLine() + "\n";
       }
       Arq.close();
-      Arq.openWrite("copia.txt");
+      Arq.openWrite("C:\\Users\\joao.aguiar\\Desktop\\756491_AEDSII_LISTAS\\Listas_JAVA\\src\\main\\java\\unidade00f\\copia.txt");
       Arq.print(str);
       Arq.close();
    }
-
 }
